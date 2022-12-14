@@ -1,0 +1,168 @@
+.hero__form{
+    position: relative;
+    bottom: 27px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 37px;
+}
+
+.hero__input{
+    font-weight: var(--main-bold-font-weight);
+    font-size: 16px;
+    line-height: 140%;
+    width: 100%;
+    margin-right: 8px;
+    padding: 16px;
+    color: var(--main-text-color);
+    background-color: #262626;
+    border: 1px solid #0d0d0d;
+    border-radius: 8px;
+}
+.hero__input::placeholder{
+    font-weight: var(--main-font-weight);
+    color: #808080;
+}
+
+.hero__btn{
+    display: inline-flex;
+    align-items: center;
+    padding: 16px;
+    font-weight: var(--main-bold-font-weight);
+    font-size: 14px;
+    line-height: 140%;
+    color: #f2f2f2; 
+    border: none;
+    border-radius: 8px;
+    background-color: #1e6f9f;
+}
+.hero__btn::after{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    background-image: url("../../assets/images/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    content: "";
+}
+
+.hero__counterbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__countertext {
+    display: inline-block;
+    margin-right: 8px;
+    font-weight: var(--main-bold-font-weight);
+    font-size: 14px;
+    line-height: 17px;
+    color: #4ea8de;    
+}
+.hero__counterallnum {
+    padding: 2px 8px;
+    font-weight: var(--main-bold-font-weight);
+    font-size: 12px;
+    line-height: 15px;
+    color: #d9d9d9;
+    background-color: #333;
+    border-radius: 999px;
+}
+
+.hero__countercomplatenum {
+    padding: 2px 8px;
+    font-weight: var(--main-bold-font-weight);
+    font-size: 12px;
+    line-height: 15px;
+    color: #d9d9d9;
+    background-color: #333;
+    border-radius: 999px;
+}
+
+.hero__list{
+    margin-top: 24px;
+    padding-left: 0;
+    border-top: 1px solid #333;
+    border-radius: 8px;
+}
+
+
+
+
+.check{
+    opacity: 0.5;
+}
+
+.hero__item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #262626;
+    border: 1px solid #333;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.hero__item:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.hero__check{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #4ea8de;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.hero__checkbox:checked ~ .hero__check{
+    background-color: #5e60ce;
+    border-color: #5e60ce;
+    background-image: url("../../assets/images/vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.hero__text{
+    margin-top: 0;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 140%;
+    color: #f2f2f2;
+}
+
+.check .hero__text{
+    text-decoration: line-through;
+}
+
+.hero__editbtn{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("../../assets/images/edit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__delbtn{
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("../../assets/images/delete.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,75 @@
+.check{
+    opacity: 0.5;
+}
+
+.hero__item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 16px;
+    background-color: #262626;
+    border: 1px solid #333;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+}
+.hero__item:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.hero__check{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 2px solid #4ea8de;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.hero__checkbox:checked ~ .hero__check{
+    background-color: #5e60ce;
+    border-color: #5e60ce;
+    background-image: url("../images/vector.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero__text{
+    margin-top: 0;
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 140%;
+    color: #f2f2f2;
+}
+
+.check .hero__text{
+    text-decoration: line-through;
+}
+
+.hero__editbtn{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("../images/edit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__delbtn{
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("../images/delete.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

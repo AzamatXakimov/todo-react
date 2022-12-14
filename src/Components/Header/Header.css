@@ -1,0 +1,11 @@
+.site-header{
+    padding-top: 72px;
+    padding-bottom: 80px;
+    background-color: #0D0D0D;
+}
+
+.site-header__inner{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
